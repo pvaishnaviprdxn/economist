@@ -1,0 +1,24 @@
+// Box sizzing 
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+// Wrapper 
+.wrapper {
+  max-width: 1400px;
+  width: 86%;
+  margin: 0 auto;
+}
+
+// List 
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+//anchor
+a { 
+  display: inline-block;
+  text-decoration: none; 
+}
