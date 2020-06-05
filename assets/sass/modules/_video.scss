@@ -1,3 +1,21 @@
+%hide-text {
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+%show-icon {
+    width: 14px;
+    padding: 10px 11px;
+    margin-left: 10px;
+    @include border-radius(18px);
+    float: right;
+    background: $gray;
+    color: $white;
+    font-family: $fontawesome;
+    text-align: center;
+    text-indent: 0;
+}
+
 .air {
     max-width: 67%;
 
@@ -28,5 +46,57 @@
         color: $black;
         font-size: $small;
         line-height: 1.5;
+    }
+
+    .social {
+        width: 88%;
+        padding-top: 50px;
+        padding-bottom: 426px;
+        margin-left: 12%;
+        background-color: $white;
+
+        &__links {
+            float: right;
+            margin-right: 50px;
+
+            li {
+                .facebook {
+                    @extend %hide-text;
+
+                    &::after {
+                        content: '\f09a';
+                        @extend %show-icon;
+                    }
+
+                }
+
+                .linkedin {
+                    @extend %hide-text;
+
+                    &::after {
+                        content: '\f0e1';
+                        @extend %show-icon;
+                    }
+                }
+
+                .twitter {
+                    @extend %hide-text;
+
+                    &::after {
+                        content: '\f099';
+                        @extend %show-icon;
+                    }
+                }
+                .email {
+                    @extend %hide-text;
+
+                    &::after {
+                        content: '\f0e0';
+                        @extend %show-icon;
+                    }
+                }
+            }
+        }
+
     }
 }

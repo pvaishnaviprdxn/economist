@@ -23,6 +23,10 @@ a {
   text-decoration: none; 
 }
 
-main { background-color: $light-gray; }
+main { 
+  background-color: $light-gray;
+  float: left;
+}
+
 .up { text-transform: uppercase; }
 .cap { text-transform: capitalize; }
