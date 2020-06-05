@@ -92,7 +92,7 @@ a {
 .cap {
   text-transform: capitalize; }
 
-header nav .menu li:nth-child(1):after, header nav .menu li:nth-child(3):after {
+header nav .menu li:nth-child(1):after, header nav .menu li:nth-child(3):after, header .login__info a.more::after {
   content: '\f107';
   color: #b1b2b3;
   font-family: "Fontawesome"; }
@@ -118,7 +118,9 @@ header {
     header .login .subscribed {
       margin-right: 20px;
       color: #b1b2b3;
-      font-family: sans-serif; }
+      font-family: sans-serif;
+      font-size: 14px;
+      text-transform: capitalize; }
     header .login .userl {
       text-indent: -9999px;
       display: inline-block; }
@@ -129,14 +131,66 @@ header {
         font-family: "Fontawesome";
         text-indent: 0; }
     header .login__info {
+      margin-right: 20px;
       display: inline-block; }
       header .login__info a {
         display: block;
         position: relative;
         top: 10px;
-        color: #b1b2b3; }
+        color: #b1b2b3;
+        font-family: sans-serif;
+        font-size: 14px; }
         header .login__info a.more {
           color: #ffd900; }
+          header .login__info a.more::after {
+            position: relative;
+            bottom: 10px;
+            left: 8px; }
+    header .login .search-btn {
+      color: #b1b2b3;
+      font-size: 14px;
+      text-transform: capitalize; }
+      header .login .search-btn .search {
+        display: inline-block;
+        text-indent: -9999px; }
+        header .login .search-btn .search:after {
+          content: '\f002';
+          float: right;
+          color: white;
+          font-family: "Fontawesome";
+          font-size: 14px;
+          text-indent: 0; }
+
+.credits {
+  background-color: white;
+  padding: 15px 0; }
+  .credits .wrapper {
+    width: 84%;
+    margin: 0 auto; }
+    .credits .wrapper .advertisement {
+      color: #343e42;
+      font-family: sans-serif;
+      font-size: 10px;
+      font-weight: 900;
+      text-decoration: underline;
+      text-transform: uppercase; }
+      .credits .wrapper .advertisement::after {
+        content: '\f105';
+        padding-left: 10px;
+        float: right;
+        font-size: 14px;
+        font-family: "Fontawesome"; }
+  .credits__sponsor {
+    float: right; }
+    .credits__sponsor a {
+      display: inline;
+      color: #343e42;
+      font-family: sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase; }
+    .credits__sponsor img {
+      width: 80px; }
 
 .hamburger {
   text-indent: -9999px;
