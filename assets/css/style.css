@@ -96,9 +96,29 @@ main {
 .cap {
   text-transform: capitalize; }
 
+.air .social__links li .facebook, .air .social__links li .linkedin, .air .social__links li .twitter, .air .social__links li .email, footer .buckle-container .update ul li .facebook2, footer .buckle-container .update ul li .twitter2, footer .buckle-container .update ul li .google-plus, footer .buckle-container .update ul li .linkedin2, footer .buckle-container .update ul li .instagram, footer .buckle-container .update ul li .youtube {
+  display: inline-block;
+  text-indent: -9999px; }
+
+.air .social__links li .facebook::after, .air .social__links li .linkedin::after, .air .social__links li .twitter::after, .air .social__links li .email::after, footer .buckle-container .update ul li .facebook2::after, footer .buckle-container .update ul li .twitter2::after, footer .buckle-container .update ul li .google-plus::after, footer .buckle-container .update ul li .linkedin2::after, footer .buckle-container .update ul li .instagram::after, footer .buckle-container .update ul li .youtube::after {
+  width: 14px;
+  padding: 10px 11px;
+  margin-left: 10px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+  float: right;
+  background: #b6b6b6;
+  color: white;
+  font-family: "Fontawesome";
+  text-align: center;
+  text-indent: 0; }
+
 header nav .menu li:nth-child(1):after, header nav .menu li:nth-child(3):after, header .login__info a.more::after {
   content: '\f107';
-  color: #b1b2b3;
+  color: #b6b6b6;
   font-family: "Fontawesome"; }
 
 header {
@@ -112,7 +132,7 @@ header {
       header nav .menu li {
         margin-right: 45px; }
         header nav .menu li a {
-          color: #b1b2b3;
+          color: #b6b6b6;
           font-family: sans-serif;
           font-size: 14px;
           text-transform: capitalize; }
@@ -121,7 +141,7 @@ header {
     float: right; }
     header .login .subscribed {
       margin-right: 20px;
-      color: #b1b2b3;
+      color: #b6b6b6;
       font-family: sans-serif;
       font-size: 14px;
       text-transform: capitalize; }
@@ -141,7 +161,7 @@ header {
         display: block;
         position: relative;
         top: 10px;
-        color: #b1b2b3;
+        color: #b6b6b6;
         font-family: sans-serif;
         font-size: 14px; }
         header .login__info a.more {
@@ -151,7 +171,7 @@ header {
             bottom: 10px;
             left: 8px; }
     header .login .search-btn {
-      color: #b1b2b3;
+      color: #b6b6b6;
       font-size: 14px;
       text-transform: capitalize; }
       header .login .search-btn .search {
@@ -256,26 +276,6 @@ aside {
         width: 50px;
         margin: 25% 40%; }
 
-.air .social__links li .facebook, .air .social__links li .linkedin, .air .social__links li .twitter, .air .social__links li .email {
-  display: inline-block;
-  text-indent: -9999px; }
-
-.air .social__links li .facebook::after, .air .social__links li .linkedin::after, .air .social__links li .twitter::after, .air .social__links li .email::after {
-  width: 14px;
-  padding: 10px 11px;
-  margin-left: 10px;
-  -webkit-border-radius: 18px;
-  -moz-border-radius: 18px;
-  -ms-border-radius: 18px;
-  -o-border-radius: 18px;
-  border-radius: 18px;
-  float: right;
-  background: #b1b2b3;
-  color: white;
-  font-family: "Fontawesome";
-  text-align: center;
-  text-indent: 0; }
-
 .air {
   max-width: 67%; }
   .air .wrapper {
@@ -315,5 +315,133 @@ aside {
         content: '\f099'; }
       .air .social__links li .email::after {
         content: '\f0e0'; }
+
+footer {
+  width: 100%;
+  float: left;
+  background-color: #121212; }
+  footer .buckle-container {
+    padding: 30px 0;
+    border-bottom: 0.5px solid #b6b6b6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    footer .buckle-container .contact-help {
+      border-right: 0.5px solid #b6b6b6; }
+      footer .buckle-container .contact-help ul li {
+        display: block;
+        padding: 10px 20px; }
+        footer .buckle-container .contact-help ul li a {
+          color: white;
+          font-family: sans-serif;
+          font-size: 14px;
+          font-weight: 600;
+          text-transform: capitalize; }
+          footer .buckle-container .contact-help ul li a:hover {
+            color: #ffd900; }
+    footer .buckle-container .update {
+      width: 50%;
+      border-right: 0.5px solid #b6b6b6; }
+      footer .buckle-container .update h3 {
+        padding: 10px 20px;
+        font-family: sans-serif;
+        font-size: 12px;
+        color: #b6b6b6; }
+      footer .buckle-container .update ul {
+        padding-left: 20px; }
+        footer .buckle-container .update ul li .facebook2::after {
+          content: '\f09a';
+          background-color: transparent;
+          color: #b6b6b6;
+          font-size: 18px; }
+        footer .buckle-container .update ul li .facebook2:hover::after {
+          color: #ffd900; }
+        footer .buckle-container .update ul li .twitter2::after {
+          content: '\f099';
+          background-color: transparent;
+          color: #b6b6b6;
+          font-size: 18px; }
+        footer .buckle-container .update ul li .twitter2:hover::after {
+          color: #ffd900; }
+        footer .buckle-container .update ul li .google-plus::after {
+          content: '\f0d5';
+          background-color: transparent;
+          color: #b6b6b6;
+          font-size: 18px; }
+        footer .buckle-container .update ul li .google-plus:hover::after {
+          color: #ffd900; }
+        footer .buckle-container .update ul li .linkedin2::after {
+          content: '\f0e1';
+          background-color: transparent;
+          color: #b6b6b6;
+          font-size: 18px; }
+        footer .buckle-container .update ul li .linkedin2:hover::after {
+          color: #ffd900; }
+        footer .buckle-container .update ul li .instagram::after {
+          content: '\f16d';
+          background-color: transparent;
+          color: #b6b6b6;
+          font-size: 18px; }
+        footer .buckle-container .update ul li .instagram:hover::after {
+          color: #ffd900; }
+        footer .buckle-container .update ul li .youtube::after {
+          content: '\f16a';
+          background-color: transparent;
+          color: #b6b6b6;
+          font-size: 18px; }
+        footer .buckle-container .update ul li .youtube:hover::after {
+          color: #ffd900; }
+    footer .buckle-container .more-aboutus ul li {
+      padding: 10px 20px;
+      display: block; }
+      footer .buckle-container .more-aboutus ul li a {
+        color: #b6b6b6;
+        font-family: sans-serif;
+        font-size: 12px;
+        text-transform: capitalize; }
+        footer .buckle-container .more-aboutus ul li a:hover {
+          color: #ffd900; }
+  footer .publish {
+    padding: 30px 0;
+    border-bottom: 0.5px solid #b6b6b6;
+    line-height: 1.2; }
+    footer .publish h4 {
+      color: #868686;
+      font-family: sans-serif;
+      font-size: 14px;
+      text-align: center; }
+    footer .publish p {
+      width: 35%;
+      margin: 0 auto;
+      color: #868686;
+      font-family: sans-serif;
+      font-size: 12px;
+      font-style: italic;
+      line-height: 1.4;
+      text-align: center; }
+  footer .terms-copyright {
+    padding: 15px 0; }
+    footer .terms-copyright .terms {
+      display: inline-block; }
+      footer .terms-copyright .terms li {
+        padding-right: 20px; }
+      footer .terms-copyright .terms a {
+        color: #b6b6b6;
+        font-family: sans-serif;
+        font-size: 12px;
+        text-transform: capitalize; }
+        footer .terms-copyright .terms a:hover {
+          color: white; }
+    footer .terms-copyright .copyright {
+      float: right;
+      color: #868686;
+      font-family: sans-serif;
+      font-size: 12px; }
+  footer::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: #e3120b; }
 
 /*# sourceMappingURL=style.css.map */
