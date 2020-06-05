@@ -87,7 +87,8 @@ a {
   text-decoration: none; }
 
 main {
-  background-color: #f6f6f7; }
+  background-color: #f6f6f7;
+  float: left; }
 
 .up {
   text-transform: uppercase; }
@@ -255,6 +256,26 @@ aside {
         width: 50px;
         margin: 25% 40%; }
 
+.air .social__links li .facebook, .air .social__links li .linkedin, .air .social__links li .twitter, .air .social__links li .email {
+  display: inline-block;
+  text-indent: -9999px; }
+
+.air .social__links li .facebook::after, .air .social__links li .linkedin::after, .air .social__links li .twitter::after, .air .social__links li .email::after {
+  width: 14px;
+  padding: 10px 11px;
+  margin-left: 10px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  border-radius: 18px;
+  float: right;
+  background: #b1b2b3;
+  color: white;
+  font-family: "Fontawesome";
+  text-align: center;
+  text-indent: 0; }
+
 .air {
   max-width: 67%; }
   .air .wrapper {
@@ -277,5 +298,22 @@ aside {
     color: #343e42;
     font-size: 14px;
     line-height: 1.5; }
+  .air .social {
+    width: 88%;
+    padding-top: 50px;
+    padding-bottom: 426px;
+    margin-left: 12%;
+    background-color: white; }
+    .air .social__links {
+      float: right;
+      margin-right: 50px; }
+      .air .social__links li .facebook::after {
+        content: '\f09a'; }
+      .air .social__links li .linkedin::after {
+        content: '\f0e1'; }
+      .air .social__links li .twitter::after {
+        content: '\f099'; }
+      .air .social__links li .email::after {
+        content: '\f0e0'; }
 
 /*# sourceMappingURL=style.css.map */
