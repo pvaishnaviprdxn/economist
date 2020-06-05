@@ -217,4 +217,42 @@ header {
     .page-info .homemenu-btn img {
       width: 16px; }
 
+aside {
+  width: 25%;
+  margin-right: 6.5%;
+  float: right; }
+  aside .wrapper {
+    margin: 0; }
+  aside .blogs li {
+    margin-bottom: 30px;
+    background-color: white; }
+    aside .blogs li .story {
+      width: 90%;
+      padding: 12px 0;
+      margin: 0 auto; }
+      aside .blogs li .story .author .name {
+        display: block;
+        font-size: 10px; }
+      aside .blogs li .story .author img {
+        width: 55px; }
+      aside .blogs li .story a {
+        padding: 10px 0;
+        color: #078a74;
+        font-size: 15px;
+        line-height: 1.5;
+        text-decoration: underline; }
+        aside .blogs li .story a:hover {
+          color: #343e42; }
+      aside .blogs li .story p {
+        color: #343e42;
+        font-size: 12px;
+        line-height: 1.5; }
+    aside .blogs li .wind-mill-img {
+      min-height: 200px;
+      background-image: url(../images/Home_img-e1533629478865-1.jpg);
+      background-size: cover; }
+      aside .blogs li .wind-mill-img img {
+        width: 50px;
+        margin: 25% 40%; }
+
 /*# sourceMappingURL=style.css.map */
