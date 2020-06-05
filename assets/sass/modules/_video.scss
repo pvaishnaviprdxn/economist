@@ -1,0 +1,32 @@
+.air {
+    max-width: 67%;
+
+    .wrapper {
+        width: 88%;
+        margin-left: 12%;
+        background-color: $white;
+    }
+    .video-img {
+        background-image: url(../images/1.jpg);
+        min-height: 380px;
+        background-size: cover;
+
+        img { 
+            width: 100px;
+            margin: 25% 45%;
+        }
+    }
+
+    h2 {
+        padding: 30px;
+        color: $green;
+        font-size: $main-head;
+    }
+
+    p {
+        padding: 0 30px;
+        color: $black;
+        font-size: $small;
+        line-height: 1.5;
+    }
+}
