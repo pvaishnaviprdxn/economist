@@ -1,0 +1,38 @@
+%angle-down {
+  content: '\f107';
+  color: $gray;
+  font-family: $fontawesome;
+}
+
+header {
+  background-color: $black;
+
+  h1 { display: inline-block; }
+  
+  nav { 
+    display: inline-block;
+
+    .menu {
+      padding-left: 20px;
+
+      li { 
+        margin-right: 45px; 
+
+        a { 
+          color: $gray;
+          font-family: $primary-font;
+          font-size: $small;
+          text-transform: capitalize;
+        }
+
+        &:nth-child(1):after { @extend %angle-down; }
+        &:nth-child(3):after { @extend %angle-down; }
+      }
+    }
+  }
+}
+
+.hamburger { 
+  text-indent: -9999px;
+  display: inline-block; 
+}
