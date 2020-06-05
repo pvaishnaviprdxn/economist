@@ -255,4 +255,27 @@ aside {
         width: 50px;
         margin: 25% 40%; }
 
+.air {
+  max-width: 67%; }
+  .air .wrapper {
+    width: 88%;
+    margin-left: 12%;
+    background-color: white; }
+  .air .video-img {
+    background-image: url(../images/1.jpg);
+    min-height: 380px;
+    background-size: cover; }
+    .air .video-img img {
+      width: 100px;
+      margin: 25% 45%; }
+  .air h2 {
+    padding: 30px;
+    color: #078a74;
+    font-size: 34px; }
+  .air p {
+    padding: 0 30px;
+    color: #343e42;
+    font-size: 14px;
+    line-height: 1.5; }
+
 /*# sourceMappingURL=style.css.map */
