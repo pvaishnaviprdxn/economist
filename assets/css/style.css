@@ -86,6 +86,9 @@ a {
   display: inline-block;
   text-decoration: none; }
 
+main {
+  background-color: #f6f6f7; }
+
 .up {
   text-transform: uppercase; }
 
@@ -195,5 +198,23 @@ header {
 .hamburger {
   text-indent: -9999px;
   display: inline-block; }
+
+.page-info {
+  padding: 20px 0; }
+  .page-info .wrapper {
+    width: 84%;
+    margin: 0 auto; }
+  .page-info a {
+    color: #078a74;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-transform: capitalize; }
+  .page-info .homemenu-btn {
+    padding: 8px;
+    float: right;
+    background-color: #343e42; }
+    .page-info .homemenu-btn img {
+      width: 16px; }
 
 /*# sourceMappingURL=style.css.map */
