@@ -1,0 +1,56 @@
+aside {
+  width: 25%;
+  margin-right: 6.5%;
+  float: right;
+
+  .wrapper { margin: 0; }
+
+  .blogs {
+
+    li {
+      margin-bottom: 30px;
+      background-color: $white;
+
+      .story {
+        width: 90%;
+        padding: 12px 0;
+        margin: 0 auto;
+
+        .author {
+          .name {
+            display: block;
+            font-size: $x-small;
+          }
+
+          img { width: 55px; }
+        }
+        
+        a { 
+          padding: 10px 0;
+          color: $green;
+          font-size: $s-large;
+          line-height: 1.5;
+          text-decoration: underline;
+
+          &:hover { color: $black; }
+        }
+
+        p {
+          color: $black;
+          font-size: $m-small;
+          line-height: 1.5;
+        }
+      }
+      .wind-mill-img {
+        min-height: 200px;
+        background-image: url(../images/Home_img-e1533629478865-1.jpg);
+        background-size: cover;
+        
+        img {
+          width: 50px;
+          margin: 25% 40%;
+        }
+      }
+    }
+  }
+}
