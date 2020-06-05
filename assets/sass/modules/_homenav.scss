@@ -1,0 +1,24 @@
+.page-info {
+  padding: 20px 0;
+  
+  .wrapper {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  a { 
+    color: $green;
+    font-size: $m-small;
+    font-weight: $med-bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+
+  .homemenu-btn {
+    padding: 8px;
+    float: right;
+    background-color: $black;
+
+    img { width: 16px; }
+  }
+}
