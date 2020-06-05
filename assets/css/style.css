@@ -86,6 +86,12 @@ a {
   display: inline-block;
   text-decoration: none; }
 
+.up {
+  text-transform: uppercase; }
+
+.cap {
+  text-transform: capitalize; }
+
 header nav .menu li:nth-child(1):after, header nav .menu li:nth-child(3):after {
   content: '\f107';
   color: #b1b2b3;
@@ -106,6 +112,31 @@ header {
           font-family: sans-serif;
           font-size: 14px;
           text-transform: capitalize; }
+  header .login {
+    margin-right: 20px;
+    float: right; }
+    header .login .subscribed {
+      margin-right: 20px;
+      color: #b1b2b3;
+      font-family: sans-serif; }
+    header .login .userl {
+      text-indent: -9999px;
+      display: inline-block; }
+      header .login .userl:after {
+        content: '\f007';
+        float: right;
+        color: white;
+        font-family: "Fontawesome";
+        text-indent: 0; }
+    header .login__info {
+      display: inline-block; }
+      header .login__info a {
+        display: block;
+        position: relative;
+        top: 10px;
+        color: #b1b2b3; }
+        header .login__info a.more {
+          color: #ffd900; }
 
 .hamburger {
   text-indent: -9999px;
