@@ -1,9 +1,75 @@
+@mixin breakpoint($device) {
+  @if($device=='pc'){
+    @media screen and (max-width: $pc) {
+      @content;
+    }
+  }
+  @else if($device=='ipad-pro') {
+    @media screen and (max-width: $ipad-pro) {
+      @content;
+    }
+  }
+  @else if($device=='desktop') {
+    @media screen and (max-width: $desktop) {
+      @content;
+    }
+  }
+  @else if($device=='tab') {
+    @media screen and (max-width: $tab) {
+      @content;
+    }
+  }
+  @else if($device=='large-mobile') {
+    @media screen and (max-width: $large-mobile) {
+      @content;
+    }
+  }
+  @else if($device=='mobile') {
+    @media screen and (max-width: $mobile) {
+      @content;
+    }
+  }
+}
+
+@mixin reverse-breakpoint($device) {
+  @if($device=='pc'){
+    @media screen and (max-width: $pc) {
+      @content;
+    }
+  }
+  @else if($device=='ipad-pro') {
+    @media screen and (max-width: $ipad-pro) {
+      @content;
+    }
+  }
+  @else if($device=='desktop') {
+    @media screen and (max-width: $ipad) {
+      @content;
+    }
+  }
+  @else if($device=='tab') {
+    @media screen and (max-width: $large-mobile) {
+      @content;
+    }
+  }
+  @else if($device=='large-mobile') {
+    @media screen and (max-width: $med-mobile) {
+      @content;
+    }
+  }
+  @else if($device=='mobile') {
+    @media screen and (max-width: $small-mobile) {
+      @content;
+    }
+  }
+}
+
 @mixin border-radius($value) {
-    -webkit-border-radius: $value;
-    -moz-border-radius: $value;
-    -ms-border-radius: $value;
-    -o-border-radius: $value;
-    border-radius: $value;
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  -o-border-radius: $value;
+  border-radius: $value;
 }
 
 @mixin display-flex($content) {
