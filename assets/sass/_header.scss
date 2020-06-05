@@ -39,6 +39,8 @@ header {
       margin-right: 20px;
       color: $gray;
       font-family: $primary-font;
+      font-size: $small;
+      text-transform: capitalize;
     }
 
     .userl { 
@@ -55,6 +57,7 @@ header {
     }
 
     &__info {
+      margin-right: 20px;
       display: inline-block;
 
       a { 
@@ -62,10 +65,84 @@ header {
         position: relative;
         top: 10px;
         color: $gray;
+        font-family: $primary-font;
+        font-size: $small;
 
-        &.more { color: $dark-yellow; }
+        &.more { 
+          color: $dark-yellow;
+
+          &::after { 
+            position: relative;
+            bottom: 10px;
+            left: 8px;
+            @extend %angle-down;
+          
+          }
+        }
       }
     }
+
+    .search-btn {
+      color: $gray;
+      font-size: $small;
+      text-transform: capitalize;
+
+      .search {
+        display: inline-block;
+        text-indent: -9999px;
+  
+        &:after {
+          content: '\f002';
+          float: right;
+          color: $white;
+          font-family: $fontawesome;
+          font-size: $small;
+          text-indent: 0;
+        }
+      }
+    }
+  }
+}
+
+.credits {
+  background-color: $white;
+  padding: 15px 0;
+
+  .wrapper {
+    width: 84%;
+    margin: 0 auto;
+
+    .advertisement { 
+      color: $black;
+      font-family: $primary-font;
+      font-size: $x-small;
+      font-weight: $bold;
+      text-decoration: underline;
+      text-transform: uppercase;
+
+      &::after { 
+        content: '\f105';
+        padding-left: 10px;
+        float: right;
+        font-size: $small;
+        font-family: $fontawesome;
+      }
+    }
+  }
+
+  &__sponsor {
+    float: right;
+
+    a {
+      display: inline;
+      color: $black;
+      font-family: $primary-font;
+      font-size: $x-small;
+      font-weight: $med-bold;
+      text-transform: uppercase;
+    }
+
+    img { width: 80px; }
   }
 }
 
