@@ -127,6 +127,9 @@ header {
     display: inline-block; }
   header nav {
     display: inline-block; }
+    @media screen and (max-width: 480px) {
+      header nav {
+        display: none; } }
     header nav .menu {
       padding-left: 20px; }
       header nav .menu li {
@@ -139,6 +142,9 @@ header {
   header .login {
     margin-right: 20px;
     float: right; }
+    @media screen and (max-width: 480px) {
+      header .login {
+        margin-top: 10px; } }
     header .login .subscribed {
       margin-right: 20px;
       color: #b6b6b6;
@@ -170,6 +176,9 @@ header {
             position: relative;
             bottom: 10px;
             left: 8px; }
+        @media screen and (max-width: 480px) {
+          header .login__info a {
+            display: none; } }
     header .login .search-btn {
       color: #b6b6b6;
       font-size: 14px;
