@@ -75,7 +75,7 @@ sub {
 
 .wrapper {
   max-width: 1400px;
-  width: 86%;
+  width: 94%;
   margin: 0 auto; }
 
 li {
@@ -85,5 +85,30 @@ li {
 a {
   display: inline-block;
   text-decoration: none; }
+
+header nav .menu li:nth-child(1):after, header nav .menu li:nth-child(3):after {
+  content: '\f107';
+  color: #b1b2b3;
+  font-family: "Fontawesome"; }
+
+header {
+  background-color: #343e42; }
+  header h1 {
+    display: inline-block; }
+  header nav {
+    display: inline-block; }
+    header nav .menu {
+      padding-left: 20px; }
+      header nav .menu li {
+        margin-right: 45px; }
+        header nav .menu li a {
+          color: #b1b2b3;
+          font-family: sans-serif;
+          font-size: 14px;
+          text-transform: capitalize; }
+
+.hamburger {
+  text-indent: -9999px;
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
