@@ -1,19 +1,36 @@
 //color start
 $black: rgb(52,62,66);
-$gray: rgb(177, 178, 179);
+$dark-black: rgb(18,18,18);
+$gray: rgb(182,182,182);
+$dark-gray: rgb(134, 134, 134);
 $light-gray: rgb(246,246,247);
 $white:rgb(255,255,255);
 $dark-yellow : rgb(255, 217, 0);
 $green : rgb(7, 138, 116);
+$red : rgb(227, 18, 11);
+$transparent: transparent;
+
 //font-family 
 $primary-font: sans-serif; 
 $fontawesome: "Fontawesome";
+$italic: italic;
+
 //font-size
+$l-large:18px;
 $s-large:15px;
 $small: 14px;
 $m-small:12px;
 $x-small : 10px;
 $main-head : 34px;
+
 //font-weight
 $med-bold:600;
 $bold: 900;
+
+//media-query
+$pc: 1440px;
+$ipad-pro: 1024px;
+$desktop: 995px;
+$tab: 767px;
+$large-mobile: 540;
+$mobile: 480px;

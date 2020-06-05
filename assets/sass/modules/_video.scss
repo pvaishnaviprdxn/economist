@@ -1,20 +1,3 @@
-%hide-text {
-    display: inline-block;
-    text-indent: -9999px;
-}
-
-%show-icon {
-    width: 14px;
-    padding: 10px 11px;
-    margin-left: 10px;
-    @include border-radius(18px);
-    float: right;
-    background: $gray;
-    color: $white;
-    font-family: $fontawesome;
-    text-align: center;
-    text-indent: 0;
-}
 
 .air {
     max-width: 67%;
@@ -99,4 +82,5 @@
         }
 
     }
+    
 }
